@@ -1,0 +1,13 @@
+		LCL   (E,1)
+(E,1)   SET  0
+		MOVER    (P,3),='0' 
+(S,1)	MOVEM  (P,3),(P,1)+(E,1)
+(E,1)   SET  (E,1)+1
+        AIF   (E,1)  NE  (P,2)    (S,1) 
+		MEND
+
+		MOVER    AREG ,(P,4)
+		MULT    AREG ,(P,4)
+		MULT    AREG ,(P,4)
+		MOVEM    AREG ,(P,5)
+		MEND
